@@ -1,0 +1,18 @@
+<h1> List of All Articles </h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Text</th>
+        <th>Time-created</th>
+    </tr>
+
+    <% @articles.each do |article| %>
+    <tr>
+        <td><%= article.Title %></td>
+        <td><%= article.Author %></td>
+        <td></td>
+    </tr>
+    <% end %>
+</table>

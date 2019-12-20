@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Compan:</strong>
+  <%= @reg.comp_id %>
+</p>
+
+<p>
+  <strong>Comp name:</strong>
+  <%= @reg.comp_name %>
+</p>
+
+<%= link_to 'Edit', edit_reg_path(@reg) %> |
+<%= link_to 'Back', regs_path %>

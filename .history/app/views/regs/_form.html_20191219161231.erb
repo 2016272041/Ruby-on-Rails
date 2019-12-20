@@ -1,0 +1,41 @@
+<%= form_with(model: reg, local: true) do |form| %>
+  <% if reg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reg.errors.count, "error") %> prohibited this reg from being saved:</h2>
+
+      <ul>
+        <% reg.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :comp_id %>
+    <%= form.text_field :comp_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comp_name %>
+    <%= form.text_field :comp_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :service %>
+    <%= form.text_field :service %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label : %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
